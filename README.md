@@ -1,3 +1,22 @@
+# Tor Proxy Site Monitoring Bot
+
+This Go application checks the status and response time of a target website through the Tor network and sends the results (site up/down status and response time) to a Telegram group via a bot. The bot operates through a SOCKS5 proxy, specifically using Tor for anonymous requests.
+
+## Features
+
+- Sends periodic updates (every 5 minutes) about the target site's availability to a Telegram group.
+- Measures response time and warns if it exceeds a specified threshold.
+- Routes all HTTP requests through the Tor network via a SOCKS5 proxy.
+
+## Requirements
+
+- [Go](https://golang.org/dl/) installed.
+- [Tor](https://www.torproject.org/download/) installed and running.
+- A [Telegram bot](https://core.telegram.org/bots#6-botfather) and a [Telegram group chat](https://telegram.org/faq_groups).
+
+## Tor Configuration (torcc)
+
+Make sure your `torcc` file is configured to allow connections on a SOCKS5 proxy, with the following content:
 
 - **SocksPort**: This sets the Tor proxy to listen on `port 9150` on all network interfaces (`0.0.0.0`).
 - **DataDirectory**: Specifies where Tor stores its data. Update the path according to your system.
