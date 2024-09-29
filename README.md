@@ -26,7 +26,7 @@ Make sure your `torcc` file is configured to allow connections on a SOCKS5 proxy
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/tor-site-monitor-bot.git
+    git clone https://github.com/Y4gizE/tor-site-monitor-bot.git
     cd tor-site-monitor-bot
     ```
 
