@@ -21,6 +21,12 @@ Make sure your `torcc` file is configured to allow connections on a SOCKS5 proxy
 - **SocksPort**: This sets the Tor proxy to listen on `port 9150` on all network interfaces (`0.0.0.0`).
 - **DataDirectory**: Specifies where Tor stores its data. Update the path according to your system.
 
+
+SocksPort 0.0.0.0:9150
+DataDirectory B:\Tor Browser\Browser\TorBrowser\Data\Tor
+ExitNodes {us}  
+Log notice stdout   
+
 ## Setup Instructions
 
 1. Clone the repository:
